@@ -32,6 +32,7 @@ body {
 }
 
 .nav {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     border-bottom-right-radius: 30px;
@@ -39,6 +40,7 @@ body {
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     background-color: whitesmoke;
     padding-left: 5px;
+    width: 100%;
 }
 
 #nav-heading {
@@ -105,6 +107,7 @@ body {
 .home-content {
     height: 86vh;
     padding: 70px;
+    padding-top: 240px;
 }
 
 #home-info-container {
@@ -115,4 +118,52 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 45%;
+}
+
+#home-info-left h1 {
+    font-size: 80px;
+    margin: 0;
+    font-family: FontHeading;
+}
+
+#home-info-left p {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: FontLight;
+    font-size: 22px;
+}
+
+#home-btns {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+#home-download {
+    width: 300px;
+    border-radius: 50px;
+    background-color: rgb(133, 18, 133);
+    color: white;
+}
+
+#home-download, #home-play {
+    font-weight: 700;
+    font-family: FontItalic;
+    border: none;
+}
+
+#home-download:hover, #home-play:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+#home-play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: gray;
+    background-color: whitesmoke;
+    padding-left: 6px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.5);
 }
