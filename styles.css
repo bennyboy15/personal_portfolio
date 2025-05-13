@@ -112,6 +112,7 @@ body {
 
 #home-info-container {
     display: flex;
+    gap: 50px;
 }
 
 #home-info-left {
@@ -178,11 +179,21 @@ body {
 }
 
 #home-info-right video {
-  width: 1000px;
+  width: 100%;
   height: auto;
-  max-height: 700px;
+  max-height: 400px;
   object-fit:cover;
   border-radius: 60% 40% 55% 35% / 50% 65% 35% 50%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: border-radius 0.5s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  #home-info-container {
+    flex-wrap: wrap;
+  }
+
+  #home-info-left {
+    width: 100%;
+  }
 }
