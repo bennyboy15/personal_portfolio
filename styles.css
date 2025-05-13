@@ -39,15 +39,16 @@ body {
     border-bottom-left-radius: 30px;
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     background-color: whitesmoke;
-    padding-left: 5px;
+    padding: 5px;
     width: 100%;
 }
 
 #nav-heading {
     display: flex;
     align-items: center;
-    margin-left: 30px;
     font-size: 30px;
+    text-align: center;
+    padding-left: 10px;
     font-family: FontHeading;
     color: rgb(36, 36, 36);
 }
@@ -63,7 +64,6 @@ body {
 
 .nav-item {
     padding: 10px;
-    margin-right: 10px;
     text-decoration: none;
     color: rgb(36, 36, 36);
 }
@@ -80,7 +80,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 20px;
+}
+
+#nav-btns button, svg {
+    margin-right: 50px;
 }
 
 #nav-hire {
@@ -139,7 +142,7 @@ body {
 
 #home-btns {
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -156,7 +159,7 @@ body {
     border: none;
 }
 
-#home-download:hover, #home-play:hover {
+#home-download:hover, #home-play:hover, #nav-hire:hover {
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
@@ -195,5 +198,15 @@ body {
 
   #home-info-left {
     width: 100%;
+  }
+
+  #home-btns {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #nav-items {
+    visibility: hidden;
   }
 }
