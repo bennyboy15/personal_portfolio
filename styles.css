@@ -1,0 +1,118 @@
+@font-face {
+font-family: 'FontHeading';
+  src: url('fonts/Satoshi-Black.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontBold';
+  src: url('fonts/Satoshi-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontItalic';
+  src: url('fonts/Satoshi-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'FontLight';
+  src: url('fonts/Satoshi-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    background-color: whitesmoke;
+    padding-left: 5px;
+}
+
+#nav-heading {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: FontHeading;
+    color: rgb(36, 36, 36);
+}
+
+#nav-items { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px;
+    font-family: FontLight;
+}
+
+.nav-item {
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(36, 36, 36);
+}
+
+.nav-item:hover {
+    color: rgb(133, 18, 133);
+    font-weight: 800;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+#nav-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+#nav-hire {
+    margin-right: 10px;
+    width: 100px;
+    height: 50%;
+    border-radius: 40px;
+    border: none;
+    background-color:rgb(133, 18, 133);
+    border: 2px solid rgb(133, 18, 133);
+    color:white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#nav-mode {
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.home-content {
+    height: 86vh;
+    padding: 70px;
+}
+
+#home-info-container {
+    display: flex;
+}
+
+#home-info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
