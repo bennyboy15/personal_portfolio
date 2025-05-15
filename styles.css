@@ -348,6 +348,16 @@ svg {
   100% { transform: scale(2.5) rotate(0deg); }
 }
 
+#backgroundCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Pushes canvas behind everything */
+  pointer-events: none; /* Allows clicks through it */
+}
+
 @media only screen and (max-width: 1000px) {
   #home-info-container {
     flex-wrap: wrap;
