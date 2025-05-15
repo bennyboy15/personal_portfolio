@@ -212,8 +212,8 @@ svg {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 260px);
-  grid-template-rows: repeat(3, 230px);
+  grid-template-columns: repeat(4, 175px);
+  grid-template-rows: repeat(3, 240px);
   gap: 10px;
 }
 
@@ -256,13 +256,31 @@ svg {
   background-color: PeachPuff;
 }
 
+#powerbi-cell {
+    background-color: rgba(255, 199, 95, 0.418);
+}
+
+#css-cell, #flask-cell, #powerauto-cell {
+    padding: 10px;
+}
+
+#powerapp-cell {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(255, 205, 255);
+}
+
+#js-cell {
+    padding: 10px;
+    background-color: rgba(109, 5, 109, 0.432);
+}
+
 #sql-cell {
   background-color: LightGreen;
 }
 
 .tall {
   grid-row: span 2;
-  /* spans 2 rows */
   padding-left: 10px;
   padding-right: 10px;
   background-color: lightcoral;
