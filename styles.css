@@ -207,7 +207,7 @@ svg {
 }
 
 .services-container,
-#projects-container {
+.projects-container {
   padding-left: 110px;
   padding-right: 110px;
   margin-top: 200px;
@@ -379,7 +379,6 @@ svg {
   height: 400px;
   perspective: 1000px;
   flex: 1;
-  /* Adds 3D depth */
 }
 
 .flip-card-inner {
@@ -415,7 +414,7 @@ svg {
 }
 
 .flip-card-back {
-  background-color: #333;
+  background-color: whitesmoke;
   color: white;
   transform: rotateY(180deg);
   display: flex;
@@ -459,15 +458,20 @@ svg {
 .project-text {
   margin: 0;
   flex: 2;
-  padding-left: 10px;
+  padding-left: 5%;
 }
 
 .project-text h3 {
   font-family: FontBold;
+  color: cornflowerblue;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(100, 148, 237, 0.28);
 }
 
 .project-text p {
    font-family: FontLight;
+   font-size: large;
 }
 
 /* Media Query */
