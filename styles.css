@@ -70,9 +70,9 @@ body {
 }
 
 .nav-item {
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
-  color: rgb(36, 36, 36);
+  font-family: FontLight;
 }
 
 .nav-item:hover {
@@ -103,7 +103,7 @@ svg {
   background-color: rgb(133, 18, 133);
   border: 2px solid rgb(133, 18, 133);
   color: white;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -453,7 +453,7 @@ svg {
   gap: 20px;
   font-family: FontHeading;
   font-size: 2rem;
-  
+  margin-bottom: 30px;
 }
 
 #projects-heading::before,
@@ -486,8 +486,39 @@ svg {
 }
 
 .project-text p {
-   font-family: FontLight;
-   font-size: large;
+  font-family: FontLight;
+  font-size: large;
+}
+
+.dots {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+.carousel-video.active {
+  display: block;
+}
+
+.carousel-video {
+  display: none;
 }
 
 /* Media Query */

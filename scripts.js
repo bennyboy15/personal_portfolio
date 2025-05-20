@@ -47,6 +47,22 @@ function animate() {
 
 animate();
 
+// IMG & VIDEO GALLERY 
+function showImage(index) {
+  const videos = document.querySelectorAll('.carousel-video');
+  const dots = document.querySelectorAll('.dot');
+  console.log(videos);
+  console.log(dots);
+  videos.forEach((video, i) => {
+    video.classList.toggle('active', i === index);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+/*
 const gallery_items = [...document.getElementsByClassName("gallery-item")];
 const videos = [
   "./video/sprayVR.mp4",
@@ -59,6 +75,7 @@ gallery_items.forEach((element, index) => {
     video_card.src = videos[index];
   });
 });
+*/
 
 // DARK MODE TOGGLE
 const toggleBtn = document.getElementById("darkModeToggle");

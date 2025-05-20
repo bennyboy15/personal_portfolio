@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>💻 Benjamin Harvey - Portfolio 🌐</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        darkMode: "class",
-      };
+        tailwind.config = {
+            darkMode: "class",
+        };
     </script>
-  </head>
+</head>
 
-  <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300">
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white transition-colors duration-300">
     <canvas id="backgroundCanvas"></canvas>
 
     <!------------------ NAV ------------------>
@@ -38,130 +39,107 @@
         
     </nav>-->
     <nav class="fixed w-full p-4 shadow-md bg-white dark:bg-gray-800 z-50">
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <!-- Brand -->
-        <div class="text-2xl font-bold" id="nav-heading">Benjamin Harvey.</div>
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Brand -->
+            <div class="text-2xl font-bold" id="nav-heading">Benjamin Harvey.</div>
 
-        <!-- Nav Links -->
-        <div class="hidden md:flex space-x-6">
-          <a href="#home" class="hover:text-blue-600">Home</a>
-          <a href="#services" class="hover:text-blue-600">Service</a>
-          <a href="#projects" class="hover:text-blue-600">Projects</a>
-          <a href="#contact" class="hover:text-blue-600">Contact</a>
+            <!-- Nav Links -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="dark:hover:text-purple-400 nav-item">Home</a>
+                <a href="#services" class="dark:hover:text-purple-400 nav-item">Service</a>
+                <a href="#projects" class="dark:hover:text-purple-400 nav-item">Projects</a>
+                <a href="#contact" class="dark:hover:text-purple-400 nav-item">Contact</a>
+            </div>
+
+            <!-- Right Buttons -->
+            <div class="flex items-center space-x-4">
+                <!-- Hire Me Button -->
+                <button id="nav-hire" class="px-4 py-2 transition">
+                    Hire Me
+                </button>
+
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle"
+                    class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                    <p class="hidden dark:block text-white">🌙</p>
+                    <p class="block dark:hidden">☀️</p>
+                </button>
+            </div>
         </div>
-
-        <!-- Right Buttons -->
-        <div class="flex items-center space-x-4">
-          <!-- Hire Me Button -->
-          <button
-            class="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
-          >
-            Hire Me
-          </button>
-
-          <!-- Dark Mode Toggle -->
-          <button
-            id="darkModeToggle"
-            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
-          >
-            <p class="hidden dark:block text-white">🌙</p>
-            <p class="block dark:hidden">☀️</p>
-          </button>
-        </div>
-      </div>
     </nav>
 
     <!------------------ HOME ------------------>
     <div class="home-content" id="home">
-      <div id="home-info-container">
-        <div id="home-info-left">
-          <div>
-            <h1>Software Developer.</h1>
-            <p>
-              1.5 years experience in Microsoft's Power Platform and experience
-              with coding and maintaining full-stack business software
-              solutions.
-            </p>
-          </div>
-          <div id="home-btns">
-            <button id="home-download">Download CV</button>
-            <svg
-              id="home-play"
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-play"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"
-              />
-            </svg>
-          </div>
+        <div id="home-info-container">
+            <div id="home-info-left">
+                <div>
+                    <h1>Software Developer.</h1>
+                    <p>
+                        1.5 years experience in Microsoft's Power Platform and experience
+                        with coding and maintaining full-stack business software
+                        solutions.
+                    </p>
+                </div>
+                <div id="home-btns">
+                    <button id="home-download">Download CV</button>
+                    <svg id="home-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-play" viewBox="0 0 16 16">
+                        <path
+                            d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                    </svg>
+                </div>
+            </div>
+            <div id="home-info-right">
+                <video src="video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop"></video>
+            </div>
         </div>
-        <div id="home-info-right">
-          <video
-            src="video/sprayVR.mp4"
-            muted="muted"
-            autoplay="autoplay"
-            loop="loop"
-          ></video>
-        </div>
-      </div>
     </div>
 
     <!------------------ SERVICES ------------------>
     <div class="services-container" id="services">
-      <div id="services-content">
-        <div class="services-content-left">
-          <div class="grid">
-            <div class="cell wide">
-              <img src="./img/python.svg" alt="python" />
+        <div id="services-content">
+            <div class="services-content-left">
+                <div class="grid">
+                    <div class="cell wide">
+                        <img src="./img/python.svg" alt="python" />
+                    </div>
+                    <div class="cell cell-pad" id="flask-cell">
+                        <img src="./img/flask-light.svg" alt="flask" />
+                    </div>
+                    <div class="cell tall cell-pad">
+                        <img src="./img/go.svg" alt="golang" />
+                    </div>
+                    <div class="cell" id="html-cell">
+                        <img src="./img/html5.svg" alt="html" />
+                    </div>
+                    <div class="cell" id="css-cell">
+                        <img src="./img/css.svg" alt="html" />
+                    </div>
+                    <div class="cell" id="js-cell">
+                        <img src="./img/javascript.svg" alt="html" />
+                    </div>
+                    <div class="cell" id="sql-cell">
+                        <img src="./img/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="html" />
+                    </div>
+                    <div class="cell" id="powerapp-cell">
+                        <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="html" />
+                    </div>
+                    <div class="cell" id="powerbi-cell">
+                        <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="html" />
+                    </div>
+                    <div class="cell" id="powerauto-cell">
+                        <img src="./img/icon-power-automate.png" alt="html" />
+                    </div>
+                </div>
             </div>
-            <div class="cell cell-pad" id="flask-cell">
-              <img src="./img/flask-light.svg" alt="flask" />
+            <div id="services-content-right">
+                <img src="./img/about-us.png" alt="about us" />
+                <p>
+                    <span id="years-exp">1&frac12</span><br />
+                    years of professional experience!
+                </p>
             </div>
-            <div class="cell tall cell-pad">
-              <img src="./img/go.svg" alt="golang" />
-            </div>
-            <div class="cell" id="html-cell">
-              <img src="./img/html5.svg" alt="html" />
-            </div>
-            <div class="cell" id="css-cell">
-              <img src="./img/css.svg" alt="html" />
-            </div>
-            <div class="cell" id="js-cell">
-              <img src="./img/javascript.svg" alt="html" />
-            </div>
-            <div class="cell" id="sql-cell">
-              <img
-                src="./img/sql-database-icon-logo-design-ui-or-ux-app-png.webp"
-                alt="html"
-              />
-            </div>
-            <div class="cell" id="powerapp-cell">
-              <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="html" />
-            </div>
-            <div class="cell" id="powerbi-cell">
-              <img
-                src="./img/power-bi-icon-logo-png_seeklogo-439962.png"
-                alt="html"
-              />
-            </div>
-            <div class="cell" id="powerauto-cell">
-              <img src="./img/icon-power-automate.png" alt="html" />
-            </div>
-          </div>
         </div>
-        <div id="services-content-right">
-          <img src="./img/about-us.png" alt="about us" />
-          <p>
-            <span id="years-exp">1&frac12</span><br />
-            years of professional experience!
-          </p>
-        </div>
-      </div>
     </div>
 
     <!------------------ PROJECTS ------------------>
@@ -170,57 +148,52 @@
     Asset Register (mobile) <br />
     New a GOLANG project <br />
     <div class="projects-container" id="projects">
-      <h1 id="projects-heading">PROJECTS</h1>
-      <div class="project-info">
-        <div class="flip-card-gallery">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <!--<img src="https://via.placeholder.com/300x400" alt="Card Image">-->
-                <video
-                  src="./video/sprayVR.mp4"
-                  muted="muted"
-                  autoplay="autoplay"
-                  loop="loop"
-                  id="spray-videos"
-                ></video>
-              </div>
-              <div class="flip-card-back">
-                <div>
-                  <h2>Card Title</h2>
-                  <p>
-                    This is the back of the card. You can add more information
-                    here.
-                  </p>
+        <h1 id="projects-heading">PROJECTS</h1>
+        <div class="project-info">
+            <div class="flip-card-gallery">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <!--<img src="https://via.placeholder.com/300x400" alt="Card Image">-->
+                            <video src="./video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos active "></video>
+                            <video src="./video/IMG_0360.MOV" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos"></video>
+                            <video src="./video/IMG_0396.mov" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos"></video>
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h2>Card Title</h2>
+                                <p>
+                                    This is the back of the card. You can add more information
+                                    here.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="dots">
+                    <span class="dot active" onclick="showImage(0)"></span>
+                    <span class="dot" onclick="showImage(1)"></span>
+                    <span class="dot" onclick="showImage(2)"></span>
+                </div>
             </div>
-          </div>
-          <div>
-            <ul class="gallery-items">
-              <li class="gallery-item">1</li>
-              <li class="gallery-item">2</li>
-              <li class="gallery-item">3</li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="project-text">
-          <h3>Spatial Augmented Reality Spray Painting (SAR Spray)</h3>
-          <p>
-            The sensation of spray painting the environment around you, without
-            the mess! <br /><br />This project uses the spatial tracking of the
-            HTC VIVE Virtual Reality kit and projection mapping with a projector
-            to provide an immersive experience in which the environment around
-            you is the canvas. The element of spraying feels natural with a
-            custom controller that requires the user to physically move their
-            arm closer or further away for a desired spray with a tactile button
-            that is held for spraying.
-          </p>
+            <div class="project-text">
+                <h3>Spatial Augmented Reality Spray Painting (SAR Spray)</h3>
+                <p>
+                    The sensation of spray painting the environment around you, without
+                    the mess! <br /><br />This project uses the spatial tracking of the
+                    HTC VIVE Virtual Reality kit and projection mapping with a projector
+                    to provide an immersive experience in which the environment around
+                    you is the canvas. The element of spraying feels natural with a
+                    custom controller that requires the user to physically move their
+                    arm closer or further away for a desired spray with a tactile button
+                    that is held for spraying.
+                </p>
+            </div>
         </div>
-      </div>
     </div>
 
     <script src="scripts.js"></script>
-  </body>
+</body>
+
 </html>
