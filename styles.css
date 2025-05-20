@@ -58,7 +58,6 @@ body {
   text-align: center;
   padding-left: 10px;
   font-family: FontHeading;
-  color: rgb(36, 36, 36);
 }
 
 #nav-items {
@@ -454,7 +453,7 @@ svg {
   gap: 20px;
   font-family: FontHeading;
   font-size: 2rem;
-  color: #3a3a3a;
+  
 }
 
 #projects-heading::before,
