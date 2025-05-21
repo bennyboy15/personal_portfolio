@@ -62,21 +62,6 @@ function showImage(index) {
   });
 }
 
-/*
-const gallery_items = [...document.getElementsByClassName("gallery-item")];
-const videos = [
-  "./video/sprayVR.mp4",
-  "./video/IMG_0396.mov",
-  "./video/IMG_0360.MOV",
-];
-const video_card = document.getElementById("spray-videos");
-gallery_items.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    video_card.src = videos[index];
-  });
-});
-*/
-
 // DARK MODE TOGGLE
 const toggleBtn = document.getElementById("darkModeToggle");
 toggleBtn.addEventListener("click", () => {

@@ -430,7 +430,7 @@ svg {
 }
 
 .flip-card-back {
-  background-color: whitesmoke;
+  background-color: rgba(100, 148, 237, 0.553);
   color: white;
   transform: rotateY(180deg);
   display: flex;
@@ -486,6 +486,7 @@ svg {
 }
 
 .project-text p {
+  margin-top: 10px;
   font-family: FontLight;
   font-size: large;
 }
@@ -497,12 +498,16 @@ svg {
   justify-content: end;
 }
 .project-tools img {
-  width: 50px;
+  width: 80px;
   height: 50px;
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 8px;
   object-fit: fill;
+  transition: transform 0.7s;
+}
+.project-tools img:hover {
+  transform: scale(1.2);
 }
 
 .dots {
@@ -517,7 +522,7 @@ svg {
   height: 12px;
   width: 12px;
   margin: 0 5px;
-  background-color: gray;
+  background-color: rgb(165, 165, 165);
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
@@ -525,7 +530,7 @@ svg {
 }
 
 .dot.active {
-  background-color: black;
+  background-color: rgb(64, 123, 234);
 }
 
 .carousel-video.active {
