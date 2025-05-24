@@ -116,7 +116,7 @@ svg {
 }
 
 .home-content {
-  height: 70vh;
+  height: 100vh;
   padding: 110px;
   padding-top: 150px;
 }
@@ -209,14 +209,14 @@ svg {
 .projects-container {
   padding-left: 110px;
   padding-right: 110px;
-  margin-top: 200px;
+  margin-top: 1vh;
   height: auto;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 175px);
-  grid-template-rows: repeat(3, 240px);
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(3, 30%);
   gap: 10px;
 }
 
@@ -304,7 +304,7 @@ svg {
   align-items: stretch;
   /* makes children match height */
   gap: 20px;
-  padding-top: 160px;
+  padding-top: 1vh;
 }
 
 .services-content-left {
@@ -325,11 +325,12 @@ svg {
 
 #services-content-right p {
   position: relative;
-  top: 35%;
-  right: 35%;
-  font-size: 40px;
+  top: 40%;
+  right: 40%;
+  font-size: 30px;
   font-family: FontBold;
-  height: 30vh;
+  width: 30%;
+  color: rgb(34, 34, 34);
 }
 
 #services-content-right span {
@@ -446,6 +447,13 @@ svg {
   object-fit: cover;
 }
 
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  background-color: gainsboro;
+}
+
 #projects-heading {
   display: flex;
   align-items: center;
@@ -466,6 +474,7 @@ svg {
 
 .project-info {
   margin: 0;
+  margin-bottom: 10vh;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -479,10 +488,18 @@ svg {
 
 .project-text h3 {
   font-family: FontBold;
-  color: cornflowerblue;
   border-radius: 10px;
   padding: 10px;
+}
+
+#project-header-1 {
   background-color: rgba(100, 148, 237, 0.28);
+  color: cornflowerblue;
+}
+
+#project-header-2 {
+  background-color: rgba(144, 238, 144, 0.5);
+  color: rgba(86, 141, 86, 1);
 }
 
 .project-text p {
@@ -503,7 +520,7 @@ svg {
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 8px;
-  object-fit: fill;
+  object-fit: contain;
   transition: transform 0.7s;
 }
 .project-tools img:hover {

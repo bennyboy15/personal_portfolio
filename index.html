@@ -135,7 +135,7 @@
             <div id="services-content-right">
                 <img src="./img/about-us.png" alt="about us" />
                 <p>
-                    <span id="years-exp">1&frac12</span><br />
+                    <span id="years-exp" class="text-xl">1&frac12</span><br />
                     years of professional experience!
                 </p>
             </div>
@@ -143,12 +143,13 @@
     </div>
 
     <!------------------ PROJECTS ------------------>
-    sprayVR <br />
+    <!--sprayVR <br />
     Core Deposit <br />
     Asset Register (mobile) <br />
-    New a GOLANG project <br />
+    New a GOLANG project <br />-->
     <div class="projects-container" id="projects">
         <h1 id="projects-heading">PROJECTS</h1>
+        <!-- Project 1 -->
         <div class="project-info">
             <div class="flip-card-gallery">
                 <div class="flip-card">
@@ -160,10 +161,9 @@
                         </div>
                         <div class="flip-card-back">
                             <div>
-                                <h2>Card Title</h2>
+                                <h2><b>Spray Project</b></h2>
                                 <p>
-                                    This is the back of the card. You can add more information
-                                    here.
+                                    Video examples of the project's journey from VR to AR.
                                 </p>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
             </div>
 
             <div class="project-text">
-                <h3>Spatial Augmented Reality Spray Painting (SAR Spray)</h3>
+                <h3 id="project-header-1">Spatial Augmented Reality Spray Painting (SAR Spray)</h3>
                 <p>
                     The sensation of spray painting the environment around you, without
                     the mess! <br /><br />This project uses the spatial tracking of the
@@ -193,6 +193,51 @@
                     <img src="./img/unity_dark.svg" alt="Unity" class="hidden dark:inline dark:bg-[cornflowerblue]/50">
                     <img src="./img/unity (2).svg" alt="Unity" class="inline dark:hidden dark:bg-[cornflowerblue]/50">
                     <img src="./img/Vive-logo.png" alt="HTC Vive" class="dark:bg-[cornflowerblue]/50">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-info">
+            <div class="flip-card-gallery">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/asset reg/asset_reg_home.PNG" alt="" class="carousel-video">
+                            <img src="./img/asset reg/asset_reg_item.PNG" alt="" class="carousel-video">
+                            <img src="./img/asset reg/asset_reg_form.PNG" alt="" class="carousel-video">
+                        </div>
+                        <div class="flip-card-back">
+                            <div>
+                                <h1><b>Asset Register</b></h2>
+                                <p>
+                                    Examples of the asset register in use!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dark:bg-gray-200 dot active" onclick="showImage(3)"></span>
+                    <span class="dot" onclick="showImage(4)"></span>
+                    <span class="dot" onclick="showImage(5)"></span>
+                </div>
+            </div>
+
+            <div class="project-text">
+                <h3 id="project-header-2">Asset Register</h3>
+                <p>
+                    Power Apps solution to record and track business assets that require servicing.<br><br> 
+
+                    Organise assets by type and view overall status of each asset type. Drill down further to view
+                    individual assets and their information. Schedule in services and complete service forms to update
+                    assets' status and build a servicing archive full of images and attachments.<br><br>
+                    
+                    Aimed to turn a traffic light report <span class="text-green-500"><b>GREEN</b></span>
+                </p>
+                <div class="project-tools">
+                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps" class="dark:bg-[cornflowerblue]/50">
+                    <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-[cornflowerblue]/50">
                 </div>
             </div>
         </div>
