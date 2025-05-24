@@ -152,14 +152,14 @@
         <!-- Project 1 -->
         <div class="project-info">
             <div class="flip-card-gallery">
-                <div class="flip-card">
+                <div class="flip-card" id="flip-video">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
+                        <div class="flip-card-front sprayVideosContainer">
                             <video src="./video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos active "></video>
                             <video src="./video/IMG_0360.MOV" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos"></video>
                             <video src="./video/IMG_0396.mov" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos"></video>
                         </div>
-                        <div class="flip-card-back">
+                        <div class="flip-card-back sprayVideosContainer">
                             <div>
                                 <h2><b>Spray Project</b></h2>
                                 <p>
@@ -202,18 +202,10 @@
             <div class="flip-card-gallery">
                 <div class="flip-card">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./img/asset reg/asset_reg_home.PNG" alt="" class="carousel-video">
+                        <div class="flip-card-front assetImgs">
+                            <img src="./img/asset reg/asset_reg_home.PNG" alt="" class="carousel-video active">
                             <img src="./img/asset reg/asset_reg_item.PNG" alt="" class="carousel-video">
                             <img src="./img/asset reg/asset_reg_form.PNG" alt="" class="carousel-video">
-                        </div>
-                        <div class="flip-card-back">
-                            <div>
-                                <h1><b>Asset Register</b></h2>
-                                <p>
-                                    Examples of the asset register in use!
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,7 +217,7 @@
             </div>
 
             <div class="project-text">
-                <h3 id="project-header-2">Asset Register</h3>
+                <h3 id="project-header-2">Asset Register (Mobile)</h3>
                 <p>
                     Power Apps solution to record and track business assets that require servicing.<br><br> 
 
@@ -236,8 +228,45 @@
                     Aimed to turn a traffic light report <span class="text-green-500"><b>GREEN</b></span>
                 </p>
                 <div class="project-tools">
-                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps" class="dark:bg-[cornflowerblue]/50">
-                    <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-[cornflowerblue]/50">
+                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps" class="dark:bg-[lightgreen]/50">
+                    <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-[lightgreen]/50">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-info">
+            <div class="flip-card-gallery">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/training_matrix/training_home.png" alt="" class="carousel-video active">
+                            <img src="./img/training_matrix/training_search.png" alt="" class="carousel-video">
+                            <img src="./img/training_matrix/training_cal.png" alt="" class="carousel-video">
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dark:bg-gray-200 dot active" onclick="showImage(6)"></span>
+                    <span class="dot" onclick="showImage(7)"></span>
+                    <span class="dot" onclick="showImage(8)"></span>
+                </div>
+            </div>
+
+            <div class="project-text">
+                <h3 id="project-header-3">Training Matrix</h3>
+                <p>
+                    Power Apps solution to record/assign/complete employee training.<br><br> 
+
+                    Create new training modules, assign them to employees and marked them as complete.
+                    Build a training calendar for training by selecting date and time when assigning modules.<br><br>
+
+                    View training gap analysis with an embedded PowerBI report!<br><br>
+                </p>
+                <div class="project-tools">
+                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps" class="dark:bg-[rgba(255,205,255,0.5)]">
+                    <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-[rgba(255,205,255,0.5)]">
+                    <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="Power BI" class="dark:bg-[rgba(255,205,255,0.5)]">
                 </div>
             </div>
         </div>

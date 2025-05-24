@@ -53,13 +53,19 @@ function showImage(index) {
   const dots = document.querySelectorAll('.dot');
   console.log(videos);
   console.log(dots);
-  videos.forEach((video, i) => {
-    video.classList.toggle('active', i === index);
-  });
 
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
+  if(index < 3){
+    videos.forEach((video, i) => {
+      video.classList.toggle('active', i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+  } else {
+    
+  }
+
 }
 
 // DARK MODE TOGGLE
