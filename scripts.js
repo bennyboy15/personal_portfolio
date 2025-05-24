@@ -74,3 +74,13 @@ const toggleBtn = document.getElementById("darkModeToggle");
 toggleBtn.addEventListener("click", () => {
   document.documentElement.classList.toggle("dark");
 });
+
+
+function togglePlay() {
+  const video = document.getElementById("home-video");
+  if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+}

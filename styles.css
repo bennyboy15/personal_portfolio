@@ -154,13 +154,6 @@ svg {
   justify-content: space-between;
 }
 
-#home-download {
-  width: 100%;
-  border-radius: 50px;
-  background-color: rgb(133, 18, 133);
-  color: white;
-}
-
 #home-download,
 #home-play {
   font-weight: 700;
@@ -204,6 +197,20 @@ svg {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   transition: border-radius 0.5s ease;
 }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgb(133, 18, 133);
+  color: white;
+}
+
 
 .services-container,
 .projects-container {
