@@ -49,25 +49,25 @@ animate();
 
 // IMG & VIDEO GALLERY 
 function showImage(dot) {
-            const galleryIndex = dot.dataset.gallery;
-            const imageIndex = parseInt(dot.dataset.index);
+  const galleryIndex = dot.dataset.gallery;
+  const imageIndex = parseInt(dot.dataset.index);
 
-            // Find the right project container
-            const projectGalleries = document.querySelectorAll('.flip-card-gallery');
-            const currentGallery = projectGalleries[galleryIndex];
+  // Find the right project container
+  const projectGalleries = document.querySelectorAll('.flip-card-gallery');
+  const currentGallery = projectGalleries[galleryIndex];
 
-            // Get all media (images/videos) inside this gallery
-            const mediaElements = currentGallery.querySelectorAll('.carousel-video');
-            const dots = currentGallery.querySelectorAll('.dot');
+  // Get all media (images/videos) inside this gallery
+  const mediaElements = currentGallery.querySelectorAll('.carousel-video');
+  const dots = currentGallery.querySelectorAll('.dot');
 
-            // Hide all and remove active class
-            mediaElements.forEach(el => el.classList.remove('active'));
-            dots.forEach(el => el.classList.remove('active'));
+  // Hide all and remove active class
+  mediaElements.forEach(el => el.classList.remove('active'));
+  dots.forEach(el => el.classList.remove('active'));
 
-            // Show the selected
-            mediaElements[imageIndex].classList.add('active');
-            dots[imageIndex].classList.add('active');
-        }
+  // Show the selected
+  mediaElements[imageIndex].classList.add('active');
+  dots[imageIndex].classList.add('active');
+}
 
 // DARK MODE TOGGLE
 const toggleBtn = document.getElementById("darkModeToggle");
