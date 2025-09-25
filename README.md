@@ -7,7 +7,7 @@ I'm a full stack developer that is passionate about building modern, user-centri
 
 | Frontend        | Backend        | Styling                 | Tools & Platforms         |
 |-----------------|----------------|-------------------------|---------------------------|
-| HTML, CSS, JS   | Flask / Django | TailwindCSS / Bootstrap | Git, GitHub, VS Code      |
+| HTML, CSS, JS   | Python (Flask & Django) / NodeJS + Express | TailwindCSS / Bootstrap | Git, GitHub, VS Code, Postgres, MongoDB      |
 
 
 ## 📁 Project Structure
