@@ -84,3 +84,16 @@ function togglePlay() {
       video.pause();
     }
 }
+
+// MOBILE NAV TOGGLE
+const mobileBtn = document.getElementById('mobileMenuButton');
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+  // Close menu when resizing to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) mobileMenu.classList.remove('hidden');
+  });
+}

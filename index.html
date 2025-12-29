@@ -7,6 +7,7 @@
     <title>💻 Benjamin Harvey - Portfolio 🌐</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -19,128 +20,169 @@
 
     <!----------------- NAVIGATION ---------------------->
     <nav class="fixed w-full p-4 shadow-md bg-white/90 dark:bg-gray-800/50 z-50">
-        <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-4">
             <!-- Brand -->
             <div class="text-2xl font-bold" id="nav-heading">Benjamin Harvey.</div>
 
+            <!-- Mobile menu button -->
+            <button id="mobileMenuButton"
+                class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-700 w-10 h-10"
+                aria-label="Toggle menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+
             <!-- Nav Links -->
-            <div class="hidden md:flex space-x-6">
-                <a href="#home" class="dark:hover:text-purple-400 nav-item">Home</a>
-                <a href="#services" class="dark:hover:text-purple-400 nav-item">Service</a>
-                <a href="#projects" class="dark:hover:text-purple-400 nav-item">Projects</a>
-                <a href="#contact" class="dark:hover:text-purple-400 nav-item">Contact</a>
-            </div>
+            <div id="mobile-menu"
+                class="hidden absolute left-0 right-0 top-full mt-2 bg-white/95 dark:bg-gray-800/80 shadow-md md:shadow-none md:bg-transparent md:dark:bg-transparent md:relative md:flex md:items-center md:space-x-6 md:mt-0 md:static md:translate-y-0">
+                <div class="flex flex-col gap-10 md:flex-row md:items-center w-full md:w-auto px-4 py-3 md:p-0">
+                    <a href="#home" class="py-1 md:py-0 md:px-0 dark:hover:text-purple-400 nav-item">Home</a>
+                    <a href="#services" class="py-1 md:py-0 md:px-0 dark:hover:text-purple-400 nav-item">Service</a>
+                    <a href="#projects" class="py-1 md:py-0 md:px-0 dark:hover:text-purple-400 nav-item">Projects</a>
+                    <a href="#contact" class="py-1 md:py-0 md:px-0 dark:hover:text-purple-400 nav-item">Contact</a>
+                </div>
 
-            <!-- Right Buttons -->
-            <div class="flex items-center space-x-4">
-                <!-- Hire Me Button -->
-                <button id="nav-hire" class="px-4 py-2 transition">
-                    Hire Me
-                </button>
+                <!-- Right Buttons -->
+                <div class="flex items-center space-x-4 px-4 py-3 md:p-0 md:ml-4">
+                    <!-- Hire Me Button -->
+                    <button id="nav-hire"
+                        class="px-4 py-2 rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition">Hire
+                        Me</button>
 
-                <!-- Dark Mode Toggle -->
-                <button id="darkModeToggle"
-                    class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-                    <p class="hidden dark:block text-white">🌙</p>
-                    <p class="block dark:hidden">☀️</p>
-                </button>
+                    <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <p class="hidden dark:block text-white">🌙</p>
+                        <p class="block dark:hidden">☀️</p>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!------------------ HOME ------------------>
-    <div class="home-content" id="home">
-        <div id="home-info-container">
-            <div id="home-info-left">
+    <div id="home" class="pt-40">
+        <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col-reverse md:flex-row items-center gap-8">
+            <div id="home-info-left" class="flex-1 text-center md:text-left">
                 <div>
-                    <h1>Software Developer.</h1>
-                    <p>
-                        1.5 years experience in Microsoft's Power Platform and experience
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Software Developer.</h1>
+                    <p class="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6">
+                        2 years experience in Microsoft's Power Platform and experience
                         with coding and maintaining full-stack business software
                         solutions.
                     </p>
                 </div>
-                <div id="home-btns">
-                    <!--<button id="home-download"><a href="./Benjamin_Harvey_Resume.docx" download>Download CV</a></button>-->
-                    <a href="./Benjamin_Harvey_Resume.docx" download class="btn">Download CV</a>
-                    <button onclick="togglePlay()">
-                        <svg id="home-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-play" viewBox="0 0 16 16">
-                        <path
-                            d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
+                <div class="flex items-center md:justify-start gap-3">
+                    <a href="./Benjamin_Harvey_Resume.docx" download
+                        class="inline-block flex justify-start px-4 py-2 rounded-[20px] bg-purple-800 text-white font-semibold hover:bg-purple-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-book-down-icon lucide-book-down">
+                            <path d="M12 13V7" />
+                            <path
+                                d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                            <path d="m9 10 3 3 3-3" />
+                        </svg>
+                        Download CV
+                    </a>
+                    <button onclick="togglePlay()" class="p-2 rounded-md">
+                        <svg id="home-play" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                            <path
+                                d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z" />
                         </svg>
                     </button>
                 </div>
             </div>
-            <div id="home-info-right">
-                <video id="home-video" src="video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop"></video>
+            <div id="home-info-right" class="flex-1 w-full max-w-lg">
+                <video id="home-video" src="video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop"
+                    class="w-full rounded-lg shadow-lg"></video>
             </div>
         </div>
     </div>
 
     <!------------------ SERVICES ------------------>
-    <div class="services-container" id="services">
-        <div id="services-content">
-            <div class="services-content-left">
-                <div class="grid">
-                    <div class="cell wide">
-                        <img src="./img/python.svg" alt="python" />
-                    </div>
-                    <div class="cell cell-pad" id="flask-cell">
-                        <img src="./img/flask-light.svg" alt="flask" />
-                    </div>
-                    <div class="cell tall cell-pad">
-                        <img src="./img/go.svg" alt="golang" />
-                    </div>
-                    <div class="cell" id="html-cell">
-                        <img src="./img/html5.svg" alt="html" />
-                    </div>
-                    <div class="cell" id="css-cell">
-                        <img src="./img/css.svg" alt="html" />
-                    </div>
-                    <div class="cell" id="js-cell">
-                        <img src="./img/javascript.svg" alt="html" />
-                    </div>
-                    <div class="cell" id="sql-cell">
-                        <img src="./img/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="html" />
-                    </div>
-                    <div class="cell" id="powerapp-cell">
-                        <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="html" />
-                    </div>
-                    <div class="cell" id="powerbi-cell">
-                        <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="html" />
-                    </div>
-                    <div class="cell" id="powerauto-cell">
-                        <img src="./img/icon-power-automate.png" alt="html" />
+    <div id="services" class="max-w-6xl h-[60vh] mx-auto flex flex-col md:flex-row items-start justify-between gap-2 py-2">
+        <div class="flex-1">
+            <div class="grid grid-cols-4 items-center">
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 rounded-lg shadow-lg bg-green-500/25 border border-green-500">
+                    <img src="./img/python.svg" alt="python" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 green-500 rounded-lg shadow-lg">
+                    <img src="./img/flask-light.svg" alt="flask" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-red-500/25 border border-red-500 rounded-lg shadow-lg">
+                    <img src="./img/go.svg" alt="golang" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-purple-500/25 border border-purple-500 rounded-lg shadow-lg">
+                    <img src="./img/html5.svg" alt="html" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-yellow-500/25 border border-yellow-500 rounded-lg shadow-lg">
+                    <img src="./img/css.svg" alt="css" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-pink-500/25 border border-pink-500 rounded-lg shadow-lg">
+                    <img src="./img/javascript.svg" alt="javascript" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-orange-500/25 border border-orange-500 rounded-lg shadow-lg">
+                    <img src="./img/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="sql" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 rounded-lg shadow-lg">
+                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="powerapps" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-purple-500/25 border border-purple-500 rounded-lg shadow-lg">
+                    <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="powerbi" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-green-500/25 border border-green-500 rounded-lg shadow-lg">
+                    <img src="./img/icon-power-automate.png" alt="power-automate" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-red-500/25 border border-red-500 rounded-lg shadow-lg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="node-js" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-yellow-500/25 border border-yellow-500 rounded-lg shadow-lg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 rounded-lg shadow-lg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" class="h-12 md:h-16 object-contain" />
+                </div>
+                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-cyan-500/25 border border-cyan-500 rounded-lg shadow-lg">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="git" class="h-12 md:h-16 object-contain" />
+                </div>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="relative w-full max-w-xs mx-auto md:mx-0">
+                <img src="./img/about-us.png" alt="about us" class="w-full h-auto" />
+                <div class="absolute inset-0 flex items-end justify-end pointer-events-none">
+                    <div class="text-center">
+                        <span
+                            class="block text-6xl md:text-8xl font-bold text-purple-700 drop-shadow-lg text-end">2</span>
+                        <p class="font-semibold mt-1 text-lg text-gray-900 dark:text-white drop-shadow">years of
+                            professional experience!</p>
                     </div>
                 </div>
             </div>
-            <div id="services-content-right">
-                <img src="./img/about-us.png" alt="about us" />
-                <p>
-                    <span id="years-exp" class="text-xl">1&frac12</span><br />
-                    years of professional experience!
-                </p>
-            </div>
         </div>
+    </div>
     </div>
 
     <!------------------ PROJECTS ------------------>
-    <!--sprayVR <br />
-    Core Deposit <br />
-    Asset Register (mobile) <br />
-    New a GOLANG project <br />-->
-    <div class="projects-container" id="projects">
+    <div id="projects">
         <h1 id="projects-heading">PROJECTS</h1>
         <!-- Project 1 -->
-        <div class="project-info">
+        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
             <div class="flip-card-gallery">
                 <div class="flip-card" id="flip-video">
                     <div class="flip-card-inner">
                         <div class="flip-card-front sprayVideosContainer">
-                            <video src="./video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos active "></video>
-                            <video src="./video/IMG_0360.MOV" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos"></video>
-                            <video src="./video/IMG_0396.mov" muted="muted" autoplay="autoplay" loop="loop" class="carousel-video spray-videos"></video>
+                            <video src="./video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop"
+                                class="carousel-video spray-videos active "></video>
+                            <video src="./video/IMG_0360.MOV" muted="muted" autoplay="autoplay" loop="loop"
+                                class="carousel-video spray-videos"></video>
+                            <video src="./video/IMG_0396.mov" muted="muted" autoplay="autoplay" loop="loop"
+                                class="carousel-video spray-videos"></video>
                         </div>
                         <div class="flip-card-back sprayVideosContainer">
                             <div>
@@ -159,7 +201,7 @@
                 </div>
             </div>
 
-            <div class="project-text">
+            <div class="project-text flex-1">
                 <h3 id="project-header-1">Spatial Augmented Reality Spray Painting (SAR Spray)</h3>
                 <p>
                     The sensation of spray painting the environment around you, without
@@ -181,7 +223,7 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="project-info">
+        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
             <div class="flip-card-gallery">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -199,26 +241,27 @@
                 </div>
             </div>
 
-            <div class="project-text">
+            <div class="project-text flex-1">
                 <h3 id="project-header-2">Asset Register (Mobile)</h3>
                 <p>
-                    Power Apps solution to record and track business assets that require servicing.<br><br> 
+                    Power Apps solution to record and track business assets that require servicing.<br><br>
 
                     Organise assets by type and view overall status of each asset type. Drill down further to view
                     individual assets and their information. Schedule in services and complete service forms to update
                     assets' status and build a servicing archive full of images and attachments.<br><br>
-                    
+
                     Aimed to turn a traffic light report <span class="text-green-500"><b>GREEN</b></span>
                 </p>
                 <div class="project-tools">
-                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps" class="dark:bg-[lightgreen]/50">
+                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps"
+                        class="dark:bg-[lightgreen]/50">
                     <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-[lightgreen]/50">
                 </div>
             </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="project-info">
+        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
             <div class="flip-card-gallery">
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -236,10 +279,10 @@
                 </div>
             </div>
 
-            <div class="project-text">
+            <div class="project-text flex-1">
                 <h3 id="project-header-3">Training Matrix</h3>
                 <p>
-                    Power Apps solution to record/assign/complete employee training.<br><br> 
+                    Power Apps solution to record/assign/complete employee training.<br><br>
 
                     1. Create new training modules.<br>
                     2. Assign them to employees.<br>
@@ -249,43 +292,51 @@
                     View training gap analysis with an embedded PowerBI report!<br><br>
                 </p>
                 <div class="project-tools">
-                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps" class="dark:bg-[rgba(255,205,255,0.5)]">
-                    <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-[rgba(255,205,255,0.5)]">
-                    <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="Power BI" class="dark:bg-[rgba(255,205,255,0.5)]">
+                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps"
+                        class="dark:bg-[rgba(255,205,255,0.5)]">
+                    <img src="./img/icon-power-automate.png" alt="Power Automate"
+                        class="dark:bg-[rgba(255,205,255,0.5)]">
+                    <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="Power BI"
+                        class="dark:bg-[rgba(255,205,255,0.5)]">
                 </div>
             </div>
         </div>
     </div>
 
-     <footer id="contact" class="bg-gray-100/50 dark:bg-gray-700/50 text-gray-700 dark:text-gray-300 px-6 py-8">
+    <!------------------ FOOTER ------------------>
+    <footer id="contact" class="bg-gray-100/50 dark:bg-gray-700/50 text-gray-700 dark:text-gray-300 px-6 py-8">
         <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
             <!-- Column 1: Logo or About -->
             <div>
-            <h3 class="text-lg font-semibold mb-2">Benjamin Harvey - Portfolio</h3>
-            <p class="text-sm">
-                Built with HTML, CSS, Tailwind, JavaScript, passion & time.
-            </p>
+                <h3 class="text-lg font-semibold mb-2">Benjamin Harvey - Portfolio</h3>
+                <p class="text-sm">
+                    Built with HTML, CSS, Tailwind, JavaScript, passion & time.
+                </p>
             </div>
 
             <!-- Column 2: Links -->
             <div>
-            <h3 class="text-lg font-semibold mb-2">Projects</h3>
-            <ul class="space-y-1 text-sm">
-                <li><a href="#project-header-1" class="hover:underline">SAR Spray</a></li>
-                <li><a href="#project-header-2" class="hover:underline">Asset Register</a></li>
-                <li><a href="#project-header-3" class="hover:underline">Training Matrix</a></li>
-            </ul>
+                <h3 class="text-lg font-semibold mb-2">Projects</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="#project-header-1" class="hover:underline">SAR Spray</a></li>
+                    <li><a href="#project-header-2" class="hover:underline">Asset Register</a></li>
+                    <li><a href="#project-header-3" class="hover:underline">Training Matrix</a></li>
+                </ul>
             </div>
 
             <!-- Column 3: Contact -->
             <div>
-            <h3 class="text-lg font-semibold mb-2">Contact</h3>
-            <ul class="text-sm space-y-1">
-                <li>Email: <a href="mailto:you@example.com" class="hover:underline">benjaminharvey2000@gmail.com</a></li>
-                <li>LinkedIn: <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/benjamin-harvey-159b7a267/" class="hover:underline">www.linkedin.com/in/benjamin-harvey-159b7a267</a></li>
-                <li>GitHub: <a href="https://github.com/bennyboy15/" class="hover:underline">https://github.com/bennyboy15</a></li>
-            </ul>
+                <h3 class="text-lg font-semibold mb-2">Contact</h3>
+                <ul class="text-sm space-y-1">
+                    <li>Email: <a href="mailto:you@example.com" class="hover:underline">benjaminharvey2000@gmail.com</a>
+                    </li>
+                    <li>LinkedIn: <a rel="noopener noreferrer" target="_blank"
+                            href="https://www.linkedin.com/in/benjamin-harvey-159b7a267/"
+                            class="hover:underline">www.linkedin.com/in/benjamin-harvey-159b7a267</a></li>
+                    <li>GitHub: <a href="https://github.com/bennyboy15/"
+                            class="hover:underline">https://github.com/bennyboy15</a></li>
+                </ul>
             </div>
 
         </div>
