@@ -63,117 +63,145 @@
         </div>
     </nav>
 
-    <!------------------ HOME ------------------>
-    <div id="home" class="pt-40">
-        <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col-reverse md:flex-row items-center gap-8">
-            <div id="home-info-left" class="flex-1 text-center md:text-left">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Software Developer.</h1>
-                    <p class="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6">
-                        2 years experience in Microsoft's Power Platform and experience
-                        with coding and maintaining full-stack business software
-                        solutions.
-                    </p>
+    <div class="px-4">
+        <!------------------ HOME ------------------>
+        <div id="home" class="pt-40">
+            <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col-reverse md:flex-row items-center gap-8">
+                <div id="home-info-left" class="flex-1 text-center md:text-left">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Software Developer.</h1>
+                        <p class="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-6">
+                            2 years experience in Microsoft's Power Platform and experience
+                            with coding and maintaining full-stack business software
+                            solutions.
+                        </p>
+                    </div>
+                    <div class="flex items-center md:justify-start gap-3">
+                        <a href="./Benjamin_Harvey_Resume.docx" download
+                            class="inline-block flex justify-start px-4 py-2 rounded-[20px] bg-purple-800 text-white font-semibold hover:bg-purple-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-book-down-icon lucide-book-down">
+                                <path d="M12 13V7" />
+                                <path
+                                    d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
+                                <path d="m9 10 3 3 3-3" />
+                            </svg>
+                            Download CV
+                        </a>
+                        <button onclick="togglePlay()"
+                            class="pl-2 rounded-full h-10 w-10 bg-blue-100/50 border-2 border-blue-300 hover:bg-blue-200 transition-colors">
+                            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="rgba(147, 197, 253, 1)" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-play-icon lucide-play">
+                                <path
+                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="flex items-center md:justify-start gap-3">
-                    <a href="./Benjamin_Harvey_Resume.docx" download
-                        class="inline-block flex justify-start px-4 py-2 rounded-[20px] bg-purple-800 text-white font-semibold hover:bg-purple-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-book-down-icon lucide-book-down">
-                            <path d="M12 13V7" />
-                            <path
-                                d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" />
-                            <path d="m9 10 3 3 3-3" />
-                        </svg>
-                        Download CV
-                    </a>
-                    <button onclick="togglePlay()" class="flex items-center justify-center rounded-full h-10 w-10 bg-blue-200 hover:bg-blue-300 transition-colors">
-                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 3l14 9-14 9V3z"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-            <div id="home-info-right" class="flex-1 w-full max-w-lg">
-                <video id="home-video" src="video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop"
-                    class="w-full rounded-lg shadow-lg"></video>
-            </div>
-        </div>
-    </div>
-
-    <!------------------ SERVICES ------------------>
-    <div id="services" class="max-w-6xl h-[60vh] mx-auto flex flex-col md:flex-row items-start justify-between gap-10 py-2">
-        <!-- SERVICES GRID TILES -->
-        <div class="flex-1">
-            <div class="grid grid-cols-4 items-center">
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 rounded-lg shadow-lg bg-green-500/25 border border-green-500">
-                    <img src="./img/python.svg" alt="python" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 green-500 rounded-lg shadow-lg">
-                    <img src="./img/flask-light.svg" alt="flask" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-red-500/25 border border-red-500 rounded-lg shadow-lg">
-                    <img src="./img/go.svg" alt="golang" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-purple-500/25 border border-purple-500 rounded-lg shadow-lg">
-                    <img src="./img/html5.svg" alt="html" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-yellow-500/25 border border-yellow-500 rounded-lg shadow-lg">
-                    <img src="./img/css.svg" alt="css" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-pink-500/25 border border-pink-500 rounded-lg shadow-lg">
-                    <img src="./img/javascript.svg" alt="javascript" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-orange-500/25 border border-orange-500 rounded-lg shadow-lg">
-                    <img src="./img/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="sql" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 rounded-lg shadow-lg">
-                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="powerapps" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-purple-500/25 border border-purple-500 rounded-lg shadow-lg">
-                    <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="powerbi" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-green-500/25 border border-green-500 rounded-lg shadow-lg">
-                    <img src="./img/icon-power-automate.png" alt="power-automate" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-red-500/25 border border-red-500 rounded-lg shadow-lg">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="node-js" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-yellow-500/25 border border-yellow-500 rounded-lg shadow-lg">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 rounded-lg shadow-lg">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" class="h-12 md:h-16 object-contain" />
-                </div>
-                <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-cyan-500/25 border border-cyan-500 rounded-lg shadow-lg">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg" alt="git" class="h-12 md:h-16 object-contain" />
+                <div id="home-info-right" class="flex-1 w-full max-w-lg">
+                    <video id="home-video" src="video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop"
+                        class="w-full rounded-lg shadow-lg"></video>
                 </div>
             </div>
         </div>
 
-        <!-- SERVICES RHS IMG -->
-        <div class="flex-1">
-            <div class="relative w-full md:mx-0">
-                <img src="./img/about-us.png" alt="about us" class="w-full h-full" />
-                <div class="absolute inset-0 flex items-end justify-end pointer-events-none">
-                    <div class="text-center">
-                        <span
-                            class="block text-6xl md:text-8xl font-bold text-purple-700 drop-shadow-lg">2</span>
-                        <p class="font-semibold mt-1 text-3xl text-gray-900 dark:text-white drop-shadow">years of
-                            professional experience!</p>
+        <!------------------ SERVICES ------------------>
+        <div id="services"
+            class="max-w-6xl h-[60vh] mx-auto flex flex-col md:flex-row items-start justify-between gap-10 py-2">
+            <!-- SERVICES GRID TILES -->
+            <div class="flex-1">
+                <div class="grid grid-cols-4 items-center">
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 rounded-lg shadow-lg bg-green-500/25 border border-green-500">
+                        <img src="./img/python.svg" alt="python" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 green-500 rounded-lg shadow-lg">
+                        <img src="./img/flask-light.svg" alt="flask" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-red-500/25 border border-red-500 rounded-lg shadow-lg">
+                        <img src="./img/go.svg" alt="golang" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-orange-500/25 border border-orange-500 rounded-lg shadow-lg">
+                        <img src="./img/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="sql"
+                            class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-purple-500/25 border border-purple-500 rounded-lg shadow-lg">
+                        <img src="./img/html5.svg" alt="html" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-yellow-500/25 border border-yellow-500 rounded-lg shadow-lg">
+                        <img src="./img/css.svg" alt="css" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-pink-500/25 border border-pink-500 rounded-lg shadow-lg">
+                        <img src="./img/javascript.svg" alt="javascript" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 rounded-lg shadow-lg">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                            alt="mongodb" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-blue-500/25 border border-blue-500 rounded-lg shadow-lg">
+                        <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="powerapps"
+                            class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-purple-500/25 border border-purple-500 rounded-lg shadow-lg">
+                        <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="powerbi"
+                            class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-green-500/25 border border-green-500 rounded-lg shadow-lg">
+                        <img src="./img/icon-power-automate.png" alt="power-automate"
+                            class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-red-500/25 border border-red-500 rounded-lg shadow-lg">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                            alt="node-js" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-yellow-500/25 border border-yellow-500 rounded-lg shadow-lg">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                            alt="react" class="h-12 md:h-16 object-contain" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 bg-cyan-500/25 border border-cyan-500 rounded-lg shadow-lg">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"
+                            alt="git" class="h-12 md:h-16 object-contain" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICES RHS IMG -->
+            <div class="flex-1">
+                <div class="relative w-full md:mx-0">
+                    <img src="./img/about-us.png" alt="about us" class="w-full h-full" />
+                    <div class="absolute inset-0 flex items-end justify-end pointer-events-none">
+                        <div class="text-center">
+                            <span class="block text-6xl md:text-8xl font-bold text-purple-700 drop-shadow-lg">2</span>
+                            <p class="font-semibold mt-1 text-3xl text-gray-900 dark:text-white drop-shadow">years of
+                                professional experience!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 
     <!------------------ PROJECTS ------------------>
-    <div id="projects" class="max-w-6xl mx-auto">
+    <div id="projects" class="px-10">
         <h1 id="projects-heading">PROJECTS</h1>
         <!-- SAR Spray -->
-        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
+        <div class="project-info px-4 flex flex-col md:flex-row items-start gap-6">
             <div class="flip-card-gallery">
                 <div class="flip-card" id="flip-video">
                     <div class="flip-card-inner">
@@ -224,9 +252,9 @@
         </div>
 
         <!-- Auth System -->
-        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
-            <div class="flip-card-gallery">
-                <div class="flip-card">
+        <div class="project-info px-4 flex flex-col md:flex-row items-start gap-6">
+            <div class="flip-card-gallery w-full h-full max-w-5xl">
+                <div class="flip-card h-full">
                     <div class="flip-card-inner">
                         <div class="flip-card-front assetImgs">
                             <img src="./img/auth/auth_home.jpg" alt="Auth Login" class="carousel-video active">
@@ -246,7 +274,8 @@
                 <h3 id="project-header-2">🔐 Advanced Authentication Service (MERN + JWT)</h3>
                 <p>
                     A secure, production-ready authentication service built using the MERN stack.<br><br>
-                    Implements JWT-based authentication, email verification, and password reset via email — demonstrating advanced authentication flows often used in real-world systems.
+                    Implements JWT-based authentication, email verification, and password reset via email —
+                    demonstrating advanced authentication flows often used in real-world systems.
 
                     <br><br>🧠 Authentication Flows<br>
                     ✅ JWT Authentication<br>
@@ -269,22 +298,78 @@
                     Verification and reset tokens expire automatically
                 </p>
                 <div class="project-tools">
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb"/>
-                    <img class="hidden dark:inline-block h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/expressjs-light.svg" alt="express-js" />
-                    <img class="dark:hidden h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/expressjs-dark.svg" alt="express-js" />
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                        alt="mongodb" />
+                    <img class="hidden dark:inline-block h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="./img/expressjs-light.svg" alt="express-js" />
+                    <img class="dark:hidden h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="./img/expressjs-dark.svg" alt="express-js" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                        alt="react" />
 
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="node-js"/>
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/javascript.svg" alt="javascript" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                        alt="node-js" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/javascript.svg"
+                        alt="javascript" />
 
                 </div>
             </div>
         </div>
 
         <!-- Chat App -->
-        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
-            <div class="flip-card-gallery">
-                <div class="flip-card">
+        <div class="project-info px-4 flex flex-col md:flex-row items-start gap-6">
+            <div class="project-text flex-1">
+                <h3 id="project-header-5">💬 MERN Real-Time Chat App</h3>
+                <p>
+                    A real-time chat application built using the MERN stack (MongoDB, Express, React, Node.js) and
+                    Socket.IO for instant messaging between users.
+                    <br><br>Includes JWT authentication, secure login/logout, and live user-to-user communication.
+
+                    <br><br>🚀 Features<br>
+                    ✅ User Authentication<br>
+                    Secure registration and login using JWT
+                    Passwords hashed with bcrypt
+                    Protected routes and session management
+
+                    <br><br>💬 Real-Time Messaging<br>
+                    Instant communication powered by Socket.IO
+                    Live user status (online/offline)
+                    Message persistence via MongoDB
+
+                    <br><br>👥 User Experience<br>
+                    Responsive React UI
+                    Displays active users in real time
+                    Auto-scroll and message timestamps
+
+                    <br><br>🔒 Security<br>
+                    JWT verification middleware
+                    Input sanitization and CORS protection
+                </p>
+                <div class="project-tools">
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                        alt="mongodb" />
+                    <img class="hidden dark:inline-block h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="./img/expressjs-light.svg" alt="express-js" />
+                    <img class="dark:hidden h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="./img/expressjs-dark.svg" alt="express-js" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                        alt="react" />
+
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                        alt="node-js" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/javascript.svg"
+                        alt="javascript" />
+
+                </div>
+            </div>
+            <div class="flip-card-gallery w-full h-full max-w-5xl">
+                <div class="flip-card h-full">
                     <div class="flip-card-inner">
                         <div class="flip-card-front assetImgs">
                             <img src="./img/chat_app/chat_login.jpg" alt="Chat Login" class="carousel-video active">
@@ -300,49 +385,12 @@
                 </div>
             </div>
 
-            <div class="project-text flex-1">
-                <h3 id="project-header-2">💬 MERN Real-Time Chat App</h3>
-                <p>
-                    A real-time chat application built using the MERN stack (MongoDB, Express, React, Node.js) and Socket.IO for instant messaging between users.
-                    <br><br>Includes JWT authentication, secure login/logout, and live user-to-user communication.
-
-                    <br><br>🚀 Features<br>
-                    ✅ User Authentication<br>
-                    Secure registration and login using JWT
-                    Passwords hashed with bcrypt
-                    Protected routes and session management
-
-                    <br><br>💬 Real-Time Messaging<br>
-                    Instant communication powered by Socket.IO
-                    Live user status (online/offline)
-                    Message persistence via MongoDB
-                    
-                    <br><br>👥 User Experience<br>
-                    Responsive React UI
-                    Displays active users in real time
-                    Auto-scroll and message timestamps
-
-                    <br><br>🔒 Security<br>
-                    JWT verification middleware
-                    Input sanitization and CORS protection
-                </p>
-                <div class="project-tools">
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb"/>
-                    <img class="hidden dark:inline-block h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/expressjs-light.svg" alt="express-js" />
-                    <img class="dark:hidden h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/expressjs-dark.svg" alt="express-js" />
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" />
-
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="node-js"/>
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/javascript.svg" alt="javascript" />
-
-                </div>
-            </div>
         </div>
 
         <!-- To-do App -->
-        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
-            <div class="flip-card-gallery">
-                <div class="flip-card">
+        <div class="project-info px-4 flex flex-col md:flex-row items-start gap-6">
+            <div class="flip-card-gallery h-full">
+                <div class="flip-card h-full">
                     <div class="flip-card-inner">
                         <div class="flip-card-front assetImgs">
                             <img src="./img/chat_app/chat_login.jpg" alt="Chat Login" class="carousel-video active">
@@ -359,10 +407,11 @@
             </div>
 
             <div class="project-text flex-1">
-                <h3 id="project-header-2">✅ React Native Todo App</h3>
+                <h3 id="project-header-6">✅ React Native Todo App</h3>
                 <p>
                     A modern React Native Todo application powered by Convex for real-time data synchronization.
-                    Supports full CRUD functionality, live updates, and a Settings page displaying overall task statistics.
+                    Supports full CRUD functionality, live updates, and a Settings page displaying overall task
+                    statistics.
 
                     <br><br>🧱 Core Functionality<br>
                     ✅ Create – Add new tasks instantly<br>
@@ -384,22 +433,29 @@
                     Light and Dark mode support<br>
                 </p>
                 <div class="project-tools">
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/convex.svg" alt="convex"/>
-                    <img class="hidden dark:inline-block h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/expressjs-light.svg" alt="express-js" />
-                    <img class="dark:hidden h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/expressjs-dark.svg" alt="express-js" />
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/convex.svg" alt="convex" />
+                    <img class="hidden dark:inline-block h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="./img/expressjs-light.svg" alt="express-js" />
+                    <img class="dark:hidden h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="./img/expressjs-dark.svg" alt="express-js" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                        alt="react" />
 
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="node-js"/>
-                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/javascript.svg" alt="javascript" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg"
+                        alt="node-js" />
+                    <img class="h-12 md:h-16 object-contain dark:bg-green-200/50" src="./img/javascript.svg"
+                        alt="javascript" />
 
                 </div>
             </div>
         </div>
 
         <!-- Asset Register -->
-        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
-            <div class="flip-card-gallery">
-                <div class="flip-card">
+        <div class="project-info px-4 flex flex-col md:flex-row items-start gap-6">
+            <div class="flip-card-gallery max-h-xl">
+                <div class="flip-card w-full max-w-sm h-full">
                     <div class="flip-card-inner">
                         <div class="flip-card-front assetImgs">
                             <img src="./img/asset reg/asset_reg_home.PNG" alt="" class="carousel-video active">
@@ -409,9 +465,9 @@
                     </div>
                 </div>
                 <div class="dots">
-                    <span class="dot active" data-index="0" data-gallery="2" onclick="showImage(this)"></span>
-                    <span class="dot" data-index="1" data-gallery="2" onclick="showImage(this)"></span>
-                    <span class="dot" data-index="2" data-gallery="2" onclick="showImage(this)"></span>
+                    <span class="dot active" data-index="0" data-gallery="4" onclick="showImage(this)"></span>
+                    <span class="dot" data-index="1" data-gallery="4" onclick="showImage(this)"></span>
+                    <span class="dot" data-index="2" data-gallery="4" onclick="showImage(this)"></span>
                 </div>
             </div>
 
@@ -427,32 +483,14 @@
                     Aimed to turn a traffic light report <span class="text-green-500"><b>GREEN</b></span>
                 </p>
                 <div class="project-tools">
-                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps"
-                        class="dark:bg-orange-200/50">
+                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps" class="dark:bg-orange-200/50">
                     <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-orange-200/50">
                 </div>
             </div>
         </div>
 
         <!-- Training Matrix -->
-        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
-            <div class="flip-card-gallery">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./img/training_matrix/training_home.png" alt="" class="carousel-video active">
-                            <img src="./img/training_matrix/training_search.png" alt="" class="carousel-video">
-                            <img src="./img/training_matrix/training_cal.png" alt="" class="carousel-video">
-                        </div>
-                    </div>
-                </div>
-                <div class="dots">
-                    <span class="dot active" data-index="0" data-gallery="3" onclick="showImage(this)"></span>
-                    <span class="dot" data-index="1" data-gallery="3" onclick="showImage(this)"></span>
-                    <span class="dot" data-index="2" data-gallery="3" onclick="showImage(this)"></span>
-                </div>
-            </div>
-
+        <div class="project-info px-4 flex flex-col md:flex-row items-start gap-6">
             <div class="project-text flex-1">
                 <h3 id="project-header-3">👨‍🏫 Training Matrix</h3>
                 <p>
@@ -474,7 +512,24 @@
                         class="dark:bg-[rgba(255,205,255,0.5)]">
                 </div>
             </div>
+            <div class="flip-card-gallery w-full h-full max-w-5xl">
+                <div class="flip-card h-full">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/training_matrix/training_home.png" alt="" class="carousel-video active">
+                            <img src="./img/training_matrix/training_search.png" alt="" class="carousel-video">
+                            <img src="./img/training_matrix/training_cal.png" alt="" class="carousel-video">
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-index="0" data-gallery="5" onclick="showImage(this)"></span>
+                    <span class="dot" data-index="1" data-gallery="5" onclick="showImage(this)"></span>
+                    <span class="dot" data-index="2" data-gallery="5" onclick="showImage(this)"></span>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
     <!------------------ FOOTER ------------------>

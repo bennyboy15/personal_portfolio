@@ -531,6 +531,16 @@ svg {
   color: rgb(255, 183, 115);
 }
 
+#project-header-5 {
+  background-color:rgba(253, 255, 205, 0.5);
+  color: rgb(113, 110, 35);
+}
+
+#project-header-6 {
+  background-color:rgba(255, 205, 205, 0.5);
+  color: rgb(255, 96, 96);
+}
+
 
 .project-text p {
   margin-top: 10px;
