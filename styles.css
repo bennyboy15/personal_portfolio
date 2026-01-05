@@ -220,10 +220,10 @@ svg {
   height: auto;
 }
 
-.grid {
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 20%);
-  grid-template-rows: repeat(3, 30%);
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
   gap: 10px;
 }
 
@@ -584,8 +584,9 @@ svg {
 }
 
 /* Media Query */
-@media only screen and (max-width: 1000px) {
 
+/* Large tablets / small laptops */
+@media only screen and (max-width: 1000px) {
   #home-info-container {
     flex-wrap: wrap;
   }
@@ -598,13 +599,128 @@ svg {
     visibility: hidden;
   }
 
-}
-
-
-@media only screen and (max-width: 500px) {
-
-  #services-content {
-    flex-wrap: wrap;
+  /* make project gallery stack nicely */
+  .flip-card-gallery {
+    width: 45% !important;
   }
 
+  .flip-card {
+    height: 360px;
+  }
+}
+
+/* Tablets / small screens */
+@media only screen and (max-width: 768px) {
+  #home-info-left h1 {
+    font-size: 40px;
+    line-height: 1.05;
+  }
+
+  #home-info-left p {
+    font-size: 18px;
+  }
+
+  #home-info-right video {
+    max-height: 50vh;
+  }
+
+  .flip-card-gallery {
+    width: 100% !important;
+    margin-bottom: 1rem;
+  }
+
+  .flip-card {
+    height: 300px;
+  }
+
+  .project-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .project-text {
+    padding-left: 0;
+  }
+
+  .project-tools {
+    justify-content: center;
+  }
+
+  .project-tools img {
+    width: 60px;
+    height: 38px;
+  }
+
+  #nav-hire {
+    margin-right: 6px;
+    width: auto;
+    padding: 8px 12px;
+  }
+}
+
+/* Small phones */
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 15px;
+  }
+
+  #nav-heading {
+    font-size: 20px;
+    padding-left: 6px;
+  }
+
+  #home-info-left h1 {
+    font-size: 32px;
+  }
+
+  #home-info-left p {
+    font-size: 16px;
+  }
+
+  #home-play {
+    width: 40px;
+    height: 40px;
+  }
+
+  .flip-card {
+    height: 260px;
+  }
+
+  .project-tools img {
+    width: 48px;
+    height: 36px;
+  }
+
+  .dots {
+    gap: 12px;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* Ensure services and grids compress on very small screens */
+  #services-content,
+  .services-container,
+  .projects-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Extra small devices (portrait phones) */
+@media only screen and (max-width: 360px) {
+  #home-info-left h1 {
+    font-size: 28px;
+  }
+
+  #home-info-left p {
+    font-size: 14px;
+  }
+
+  .project-tools img {
+    width: 40px;
+    height: 32px;
+  }
 }

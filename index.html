@@ -105,9 +105,9 @@
     </div>
 
     <!------------------ SERVICES ------------------>
-    <div id="services" class="max-w-6xl h-[60vh] mx-auto flex flex-col md:flex-row items-start justify-between gap-2 py-2">
+    <div id="services" class="max-w-6xl h-full mx-auto flex flex-col md:flex-row items-start justify-between gap-20 p-2">
         <div class="flex-1">
-            <div class="grid grid-cols-4 items-center">
+            <div class="h-full grid grid-cols-4 items-center services-grid">
                 <div class="flex items-center justify-center transition duration-300 ease-in-out hover:scale-110 p-3 rounded-lg shadow-lg bg-green-500/25 border border-green-500">
                     <img src="./img/python.svg" alt="python" class="h-12 md:h-16 object-contain" />
                 </div>
@@ -169,14 +169,14 @@
     </div>
 
     <!------------------ PROJECTS ------------------>
-    <div id="projects">
+    <div id="projects" class="p-2">
         <h1 id="projects-heading">PROJECTS</h1>
         <!-- Project 1 -->
         <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
             <div class="flip-card-gallery">
                 <div class="flip-card" id="flip-video">
                     <div class="flip-card-inner">
-                        <div class="flip-card-front sprayVideosContainer">
+                        <div class="flip-card-front sprayVideosContainer border border-gray-500 shadow-md">
                             <video src="./video/sprayVR.mp4" muted="muted" autoplay="autoplay" loop="loop"
                                 class="carousel-video spray-videos active "></video>
                             <video src="./video/IMG_0360.MOV" muted="muted" autoplay="autoplay" loop="loop"
@@ -341,7 +341,7 @@
 
         </div>
 
-        <div class="mt-8 text-center text-xs text-gray-500 dark:text-gray-400">
+        <div class="mt-12 text-center text-xs text-gray-500 dark:text-gray-400">
             © 2025 Benjamin Harvey. All rights reserved.
         </div>
     </footer>
