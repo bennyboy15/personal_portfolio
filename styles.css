@@ -381,7 +381,25 @@ svg {
 
 /* FLIP CARD */
 .flip-card-gallery {
-  width: 35%;
+  /* base width for larger screens; will be overridden at smaller breakpoints */
+  width: 44%;
+  max-width: 520px;
+}
+
+/* ensure project images use available space and maintain aspect ratio */
+.project-info .flip-card-gallery img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain; /* redundant but explicit */
+}
+
+/* adjust gallery sizing for narrow layouts */
+@media only screen and (max-width: 1000px) {
+  .flip-card-gallery {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .gallery-items {
