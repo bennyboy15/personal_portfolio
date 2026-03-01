@@ -76,7 +76,7 @@
                     </p>
                 </div>
                 <div class="flex items-center md:justify-start gap-3">
-                    <a href="./Benjamin_Harvey_Resume.docx" download
+                    <a href="./BenHarvey-Resume.pdf" download
                         class="inline-block flex justify-start px-4 py-2 rounded-[20px] bg-purple-800 text-white font-semibold hover:bg-purple-900">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -228,9 +228,9 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front assetImgs">
-                            <img src="./img/asset reg/asset_reg_home.PNG" alt="" class="carousel-video active">
-                            <img src="./img/asset reg/asset_reg_item.PNG" alt="" class="carousel-video">
-                            <img src="./img/asset reg/asset_reg_form.PNG" alt="" class="carousel-video">
+                            <img src="./img/chat_app/chat_login.jpg" alt="" class="carousel-video active">
+                            <img src="./img/chat_app/chat_chat.jpg" alt="" class="carousel-video">
+                            <img src="./img/chat_app/chat_settings.jpg" alt="" class="carousel-video">
                         </div>
                     </div>
                 </div>
@@ -242,20 +242,38 @@
             </div>
 
             <div class="project-text flex-1">
-                <h3 id="project-header-2">Asset Register (Mobile)</h3>
+                <h3 id="project-header-2">💬 MERN Real-Time Chat App</h3>
                 <p>
-                    Power Apps solution to record and track business assets that require servicing.<br><br>
+                    A real-time chat application built using the MERN stack (MongoDB, Express, React, Node.js) and Socket.IO for instant messaging between users.
+                    Includes JWT authentication, secure login/logout, and live user-to-user communication.
 
-                    Organise assets by type and view overall status of each asset type. Drill down further to view
-                    individual assets and their information. Schedule in services and complete service forms to update
-                    assets' status and build a servicing archive full of images and attachments.<br><br>
+                    <br><br>🚀 Features<br>
+                    ✅ User Authentication<br>
+                    Secure registration and login using JWT
+                    Passwords hashed with bcrypt
+                    Protected routes and session management<br><br>
 
-                    Aimed to turn a traffic light report <span class="text-green-500"><b>GREEN</b></span>
+                    💬 Real-Time Messaging<br>
+                    Instant communication powered by Socket.IO
+                    Live user status (online/offline)
+                    Message persistence via MongoDB<br><br>
+
+                    👥 User Experience<br>
+                    Responsive React UI
+                    Displays active users in real time
+                    Auto-scroll and message timestamps<br><br>
+
+                    🔒 Security<br>
+                    JWT verification middleware
+                    Input sanitization and CORS protection<br><br>
+
+                    <i>Check out the code here: <a href="https://github.com/bennyboy15/chat_app" class="text-blue-500 underline" target="_blank">Chat App</a></i>
                 </p>
                 <div class="project-tools">
-                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps"
-                        class="dark:bg-[lightgreen]/50">
-                    <img src="./img/icon-power-automate.png" alt="Power Automate" class="dark:bg-[lightgreen]/50">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="Power Automate" class="dark:bg-[lightgreen]/50">
+                    <img src="./img/expressjs-dark.svg" alt="Power Automate" class="dark:bg-[lightgreen]/50">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="Power Automate" class="dark:bg-[lightgreen]/50">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Power Automate" class="dark:bg-[lightgreen]/50">
                 </div>
             </div>
         </div>
@@ -266,9 +284,9 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="./img/training_matrix/training_home.png" alt="" class="carousel-video active">
-                            <img src="./img/training_matrix/training_search.png" alt="" class="carousel-video">
-                            <img src="./img/training_matrix/training_cal.png" alt="" class="carousel-video">
+                            <img src="./img/auth/auth_home.jpg" alt="" class="carousel-video active">
+                            <img src="./img/auth/auth_signup.jpg" alt="" class="carousel-video">
+                            <img src="./img/auth/auth_dashboard.jpg" alt="" class="carousel-video">
                         </div>
                     </div>
                 </div>
@@ -280,24 +298,98 @@
             </div>
 
             <div class="project-text flex-1">
-                <h3 id="project-header-3">Training Matrix</h3>
+                <h3 id="project-header-3">🔐 Advanced Authentication Service (MERN + JWT)</h3>
                 <p>
-                    Power Apps solution to record/assign/complete employee training.<br><br>
+                    A secure, production-ready authentication service built using the MERN stack.
+                    Implements JWT-based authentication, email verification, and password reset via email — demonstrating advanced authentication flows often used in real-world systems.<br><br>
 
-                    1. Create new training modules.<br>
-                    2. Assign them to employees.<br>
-                    3. Mark modules as complete.<br>
-                    4. Build a training calendar with selected dates and time<br><br>
+                    🚀 Features<br>
+                    🧠 Authentication Flows<br>
+                    ✅ JWT Authentication<br>
+                    Access and refresh tokens for persistent sessions
+                    Secure storage and token rotation<br><br>
 
-                    View training gap analysis with an embedded PowerBI report!<br><br>
+                    ✅ Email Verification (Mailtrap)<br>
+                    Sends verification email upon registration
+                    Prevents unverified accounts from logging in<br><br>
+
+                    ✅ Forgot & Reset Password<br>
+                    Generates one-time secure token
+                    Sends password reset email link
+                    Tokens expire after a set time<br><br>
+
+                    🔒 Security Highlights<br>
+                    Passwords hashed using bcrypt
+                    Tokens signed with JWT_SECRET and stored securely
+                    CORS and helmet protection enabled
+                    Verification and reset tokens expire automatically<br><br>
+
+                    🧩 Tech Stack<br>
+                    Frontend: React + Axios
+                    Backend: Node.js + Express.js
+                    Database: MongoDB + Mongoose
+                    Authentication: JWT (Access + Refresh Tokens), bcrypt
+                    Email Service: Mailtrap<br><br>
+                    <i>Check out the code here: <a href="https://github.com/bennyboy15/auth_system" class="text-blue-500 underline" target="_blank">Auth App</a></i>
                 </p>
                 <div class="project-tools">
-                    <img src="./img/powerapp-2020-icon-1024x1024-3.png" alt="Power Apps"
-                        class="dark:bg-[rgba(255,205,255,0.5)]">
-                    <img src="./img/icon-power-automate.png" alt="Power Automate"
-                        class="dark:bg-[rgba(255,205,255,0.5)]">
-                    <img src="./img/power-bi-icon-logo-png_seeklogo-439962.png" alt="Power BI"
-                        class="dark:bg-[rgba(255,205,255,0.5)]">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="Power Automate" class="dark:bg-purple-200/50">
+                    <img src="./img/expressjs-dark.svg" alt="Power Automate" class="dark:bg-purple-200/50">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="Power Automate" class="dark:bg-purple-200/50">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Power Automate" class="dark:bg-purple-200/50">
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-info flex flex-col md:flex-row items-start gap-6 my-8">
+            <div class="flip-card-gallery">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="./img/linkedin_clone/login.png" alt="" class="carousel-video active">
+                            <img src="./img/linkedin_clone/Dash.png" alt="" class="carousel-video">
+                            <img src="./img/linkedin_clone/notifications.png" alt="" class="carousel-video">
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <span class="dot active" data-index="0" data-gallery="3" onclick="showImage(this)"></span>
+                    <span class="dot" data-index="1" data-gallery="3" onclick="showImage(this)"></span>
+                    <span class="dot" data-index="2" data-gallery="3" onclick="showImage(this)"></span>
+                </div>
+            </div>
+
+            <div class="project-text flex-1">
+                <h3 id="project-header-4">🧠 LinkedIn Clone</h3>
+                <p>
+                    LinkedIn Clone - MERN Stack A full-stack professional networking application built with the MERN (MongoDB, Express, React, Node.js) stack. This project mimics the core functionality of LinkedIn, allowing users to connect, share insights, and build a professional presence.
+                    <br><br>🌟 Key Features User Authentication: Secure JWT-based authentication with persistent login sessions.<br>
+                    Dynamic News Feed: Users can create, edit, and delete posts with text and image support.<br>
+                    Interaction System: Real-time like and comment functionality on user posts.<br>
+                    User Profiles: Detailed profile pages showcasing experience, education, and skills.<br>
+                    Network Building: Send, accept, or decline connection requests.<br>
+                    Responsive Design: Fully optimized for desktop, tablet, and mobile devices<br><br>
+
+                    🛠️ Technology Stack<br> 
+                    Frontend:<br>
+                    React.js<br>
+                    Zustand<br>
+                    Tailwind CSS / Styled Components<br>
+                    Axios (API Calls)<br>
+
+                    Backend:<br>
+                    Node.js & Express.js<br>
+                    MongoDB & Mongoose (Modeling)<br>
+                    JSON Web Tokens (Auth)<br>
+                    Multer / Cloudinary (Image Handling)<br><br>
+                    <i>Check out the code here: <a href="https://github.com/bennyboy15/linkedin_clone" class="text-blue-500 underline" target="_blank">LinkedIn Clone App</a></i>
+                </p>
+                <div class="project-tools">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg" alt="Power Automate" class="dark:bg-orange-200/50">
+                    <img src="./img/expressjs-dark.svg" alt="Power Automate" class="dark:bg-orange-200/50">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="Power Automate" class="dark:bg-orange-200/50">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" alt="Power Automate" class="dark:bg-orange-200/50">
                 </div>
             </div>
         </div>
